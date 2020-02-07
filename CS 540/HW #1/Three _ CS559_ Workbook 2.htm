@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/docs/three/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three | CS559: Workbook 2</title>
+
+
+<link rel="stylesheet" href="./Three _ CS559_ Workbook 2_files/book.min.6c7317d2e8552a0ac3ea8fd4ba500c3dfb1cc9c74e7afd73eee6d729751fad30.css">
+
+
+
+
+<link rel="icon" href="http://127.0.0.1:5500/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control">
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="http://127.0.0.1:5500/docs/three/">CS559: Workbook 2</a>
+</h2>
+
+
+
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2f docs\2fthree\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><a href="http://127.0.0.1:5500/"><strong>Getting Started</strong></a></li>
+<li><a href="http://127.0.0.1:5500/docs/one/">Page 1: Web Graphics APIs</a></li>
+<li><a href="http://127.0.0.1:5500/docs/two/">Page 2: Drawing with Canvas</a></li>
+<li><a href="http://127.0.0.1:5500/docs/three/">Page 3: Canvas Drawing: Your Turn</a></li>
+<li><a href="http://127.0.0.1:5500/docs/four/">Page 4: Animation and Interaction with Canvas</a></li>
+<li><a href="http://127.0.0.1:5500/docs/five/">Page 5: Try Canvas Programming</a></li>
+<li><a href="http://127.0.0.1:5500/docs/six/">Page 6: Where did I draw?</a></li>
+</ul>
+
+
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="./Three _ CS559_ Workbook 2_files/menu.svg" alt="Menu">
+  </label>
+  <strong>Three</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="page-3-canvas-drawing-your-turn">Page 3: Canvas Drawing: Your Turn</h1>
+
+<p>Now that you’ve learned to draw, you’ll get to draw something!</p>
+
+<p>There are two exercises - you must make a picture for each.
+In the first one, you have to make the picture you’re asked for.
+In the second one, you can make anything you want.</p>
+
+<p>You should do these exercises by editing the file <code>for_students/page3.js</code>.
+We’ve actually started things for you.
+Specifically, your code for exercise 1 should go into the function
+<code>wb2_pg3_ex1</code>, and your code for exercise 2 should go into the function
+<code>wb2_pg3_ex2</code>. Please put all of your code inside of these functions!</p>
+
+<p>You do not need to use Canvas concepts that we haven’t learned about yet (transformations or curves). You can use images or text if you want. If you use an image file, make sure you add it to the GitHub repo!</p>
+
+<p>You should not use the Canvas SVG Path functionality.</p>
+
+<h2 id="exercise-1-a-simple-picture">Exercise 1: A Simple Picture</h2>
+
+<p>Make a picture that contains:</p>
+
+<ol>
+<li><p>a circle</p></li>
+
+<li><p>a triangle</p></li>
+
+<li><p>a capsule (half circles connected by straight lines)</p></li>
+
+<li><p>a sawtooth / mountain (two triangles sticking out of a rectangle)</p></li>
+</ol>
+
+<p>For each, have a solid line border and a filled color.</p>
+
+<p>Try to make it look like this example. Note: This is made using SVG. Do not try to read the SVG, and in particular, don’t copy the paths. You don’t have to match it exactly, but get the 4 basic shapes. And do it in Canvas, by editing the <code>wb2_pg3_ex1</code> function in the <code>for_students/page3.js</code> file.</p>
+
+<p><link rel="stylesheet" type="text/css" href="./Three _ CS559_ Workbook 2_files/a02.css">
+<script src="./Three _ CS559_ Workbook 2_files/page3.js" type="module"></script>
+<svg width="225px" height="175px">
+    <circle cx="50" cy="50" r="25" style="width:3; fill: #F8E; stroke:#846; stroke-width:5"></circle>
+    <polygon points="25,150, 75,150, 50,110" style="stroke-width:5; fill:sandybrown; stroke:darkgoldenrod"></polygon>
+    <path d="M 125 25 L 175 25 A 25 25 0 0 1 175 75 L 125 75 A 25 25 0 0 1 125 25 Z" style="stroke:darkred; stroke-width: 5; fill:lightpink"></path>
+    <path d="M 100 150 L 200 150 L 200 125 L 175 100 L 150 125 L 125 100 L 100 125 Z" style="stroke:black; fill:gray; stroke-width:5"></path>
+</svg></p>
+
+<p>Put your picture in this Canvas element (it’s id is “canvas1” and it is 400x200).</p>
+
+<canvas id="canvas1" width="400px" height="200px"></canvas>
+
+<h2 id="exercise-2-your-own-picture">Exercise 2: Your own Picture</h2>
+
+<p>Make any picture you want to show off how well you’ve learned Canvas. Make it by editing the <code>wb2_pg3_ex2</code> function in the <code>A02_p3.js</code> file. The Canvas element has id “canvas2” and size 500x500.</p>
+
+<p>You can draw anything you want. But please show off that you know how to: use styles, use transparency, use drawing order, and use complicated shapes. The grader will check that Canvas has some of those things.</p>
+
+<p>Also, you must “color in the lines” - don’t change the HTML file (the canvas is 500x500). And just make a static picture - no interaction or animation. We’ll learn about that on the next page. This is not the end of this workbook - be sure to go on to the other pages when you’re done.</p>
+
+<p>There is a chance for a <strong>bonus point</strong> if you make a picture that is particularly creative and shows off that you can use all the Canvas features we discussed.</p>
+
+<canvas id="canvas2" width="500px" height="500px"></canvas>
+
+<p>Now you can go on to <a href="http://127.0.0.1:5500/docs/four/">page 4</a></p>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-6 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="http://127.0.0.1:5500/docs/three/#page-3-canvas-drawing-your-turn">Page 3: Canvas Drawing: Your Turn</a>
+<ul>
+<li><a href="http://127.0.0.1:5500/docs/three/#exercise-1-a-simple-picture">Exercise 1: A Simple Picture</a></li>
+<li><a href="http://127.0.0.1:5500/docs/three/#exercise-2-your-own-picture">Exercise 2: Your own Picture</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+  
+  
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
