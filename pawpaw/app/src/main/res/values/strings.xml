@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">pawpaw</string>
+
+    <string-array name="type_of_location">
+        <item>Please choose</item>
+        <item>Restaurant</item>
+        <item>Library</item>
+        <item>Bakery</item>
+        <item>Bar</item>
+        <item>Movie Theater</item>
+        <item>Night Club</item>
+        <item>Store</item>
+        <item>Supermarket</item>
+        <item>Jewelry Store</item>
+        <item>Shopping Mall</item>
+        <item>Spa</item>
+        <item>Leisure</item>
+        <item>Dorm</item>
+    </string-array>
+    <string name="title_activity_map_home_page">Map</string>
+    <string name="title_activity_profile_location">ProfileLocation</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
